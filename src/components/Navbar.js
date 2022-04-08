@@ -16,10 +16,13 @@ export default function Navbar() {
   return (
     <section>
       <section className="nav" onClick={toggleMenu}>
-        <img src={source} alt="navigate" width="20px" height="20px" />
+        <img src={source} alt="navigate" width="40px" height="40px" />
       </section>
       {/* toggle menu component */}
-      {!navopen && <Menu />}
+
+      <section className={!navopen ? "menuOpen" : "menuClosed"}>
+        <Menu />
+      </section>
     </section>
   );
 }

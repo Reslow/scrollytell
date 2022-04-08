@@ -1,0 +1,9 @@
+.menuOpen {
+  transform: translate(150px, 60%);
+  transition: all ease-out 1s;
+}
+
+.menuClosed {
+  transform: translate(-100px, 50%);
+  transition: all ease-out 1s;
+}
